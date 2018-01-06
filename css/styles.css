@@ -54,6 +54,8 @@ nav {
   height: 80px;
   background-color: #252831;
   text-align:center;
+  display: flex;
+  align-items: center;
 }
 nav h1 {
   margin: auto;
@@ -106,7 +108,7 @@ nav h1 a {
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
-  height: 50px;
+  height: auto;
   background-color: #3397DB;
   align-items: center;
 }
@@ -116,6 +118,7 @@ nav h1 a {
   font-weight: normal;
   line-height: 1;
   margin: 0 20px;
+  padding-top: 5px;
 }
 .filter-options select {
   background-color: white;
@@ -272,4 +275,212 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+}
+
+/*Device Scaling*/
+/*Medium*/
+@media screen and (min-width: 501px) and (max-width: 700px)  {
+  #map {
+    height: 50vw;
+  }
+  
+  .filter-options {
+    display: flex;
+    flex-direction: row;
+  }
+  .filter-options h2 {
+    padding-top: 10px;
+  }
+  .filter-options select {
+    width: 70%;
+  }
+
+  #restaurants-list {
+    background-color: #dcdcdc;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    padding-top: 20px;
+  }
+  #restaurants-list li{
+    width: 45vw;
+    border: none;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 0;
+    height: 65vw;
+    min-height: 0;
+    position: relative;
+  }
+  #restaurants-list li h1 {
+    font-size: 3vw;
+    margin: 20px 15px 10px;
+  }
+  #restaurants-list p {
+    font-size: 2.7vw;
+    margin: 0 15px;
+  }
+  #restaurants-list .restaurant-img {
+    min-height: 0px;
+  }
+  #restaurants-list li a {
+    width: 100%;
+    margin: 0;
+    padding: 12px 0 15px;
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+  }
+}
+/*Small*/
+@media screen and (max-width: 500px)  {
+  #map {
+    height: 60vw;
+  }
+
+  .filter-options {
+    display: flex;
+    flex-direction: column;
+  }
+  .filter-options h2 {
+    padding-top: 10px;
+  }
+  .filter-options select {
+    width: 70%;
+  }
+
+  #restaurants-list {
+    background-color: #dcdcdc;
+    padding: 0;
+  }
+  #restaurants-list li{
+    width: 90%;
+    border: none;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 0;
+    min-height: 0;
+  }
+  #restaurants-list li h1 {
+    margin: 20px 15px 10px;
+  }
+  #restaurants-list p {
+    margin: 0 15px;
+  }
+  #restaurants-list .restaurant-img {
+    min-height: 0px;
+  }
+  #restaurants-list li a {
+    width: 100%;
+    padding: 12px 0 15px;
+    border-bottom: none;
+  }
+}
+/*Large*/
+@media screen and (min-width: 701px) and (max-width: 1000px)  {
+  #map {
+    height: 50vw;
+  }
+  .filter-options {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .filter-options h2 {
+    padding-top: 10px;
+    width: 100%;
+  }
+  .filter-options select {
+    margin: 10px 0 10px 20px;
+  }
+
+  #restaurants-list {
+    background-color: #dcdcdc;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    padding-top: 20px;
+  }
+  #restaurants-list li{
+    width: 30vw;
+    border: none;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 0;
+    height: 45vw;
+    min-height: 0;
+    position: relative;
+  }
+  #restaurants-list li h1 {
+    font-size: 2vw;
+    margin: 20px 15px 10px;
+  }
+  #restaurants-list p {
+    font-size: 1.7vw;
+    margin: 0 15px;
+  }
+  #restaurants-list .restaurant-img {
+    min-height: 0px;
+  }
+  #restaurants-list li a {
+    width: 100%;
+    margin: 0;
+    padding: 12px 0 15px;
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+  }
+}
+/*Extra Large*/
+@media screen and (min-width: 1001px) {
+  #map {
+    height: 45vw;
+  }
+  .filter-options {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .filter-options h2 {
+    padding-top: 10px;
+    width: 100%;
+  }
+  .filter-options select {
+    margin: 10px 0 10px 20px;
+  }
+
+  #restaurants-list {
+    background-color: #dcdcdc;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    padding-top: 20px;
+  }
+  #restaurants-list li{
+    width: 23vw;
+    border: none;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 0;
+    height: 35vw;
+    min-height: 0;
+    position: relative;
+  }
+  #restaurants-list li h1 {
+    font-size: 1.6vw;
+    margin: 20px 15px 10px;
+  }
+  #restaurants-list p {
+    font-size: 1.4vw;
+    margin: 0 15px;
+  }
+  #restaurants-list .restaurant-img {
+    min-height: 0px;
+  }
+  #restaurants-list li a {
+    width: 100%;
+    margin: 0;
+    padding: 12px 0 15px;
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+  }
 }
