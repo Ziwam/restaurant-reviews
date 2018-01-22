@@ -127,9 +127,14 @@ nav h1 a {
   font-size: 11pt;
   height: 35px;
   letter-spacing: 0;
-  margin: 10px;
+  margin: auto;
   padding: 0 10px;
-  width: 200px;
+  width: 100%;
+}
+.filter-options label {
+  color: white;
+  margin: 10px;
+  font-size: 11pt;
 }
 
 /* ====================== Restaurant Listing ====================== */
@@ -295,6 +300,9 @@ nav h1 a {
     padding-top: 10px;
   }
   .filter-options select {
+    width: 95%;
+  }
+  .filter-options label {
     width: 70%;
   }
 
@@ -344,11 +352,15 @@ nav h1 a {
   .filter-options {
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
   .filter-options h2 {
     padding-top: 10px;
   }
   .filter-options select {
+
+  }
+  .filter-options label {
     width: 70%;
   }
 
@@ -391,9 +403,14 @@ nav h1 a {
   .filter-options h2 {
     padding-top: 10px;
     width: 100%;
+    margin-left: 35px;
   }
   .filter-options select {
-    margin: 10px 0 10px 20px;
+    margin: 10px 0 10px 0;
+  }
+  .filter-options label {
+    width: 30%;
+    margin-left: 35px;
   }
 
   #restaurants-list {
@@ -444,9 +461,14 @@ nav h1 a {
   .filter-options h2 {
     padding-top: 10px;
     width: 100%;
+    margin-left: 35px;
   }
   .filter-options select {
-    margin: 10px 0 10px 20px;
+    margin: 10px 0 10px 0;
+  }
+  .filter-options label {
+    width: 30%;
+    margin-left: 35px;
   }
 
   #restaurants-list {
