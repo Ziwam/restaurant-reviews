@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* CSS Document */
+/* CSS Documen */
 
 body,td,th,p{
 	font-family: Arial, Helvetica, sans-serif;
@@ -154,7 +154,6 @@ nav h1 a {
   padding: 0 30px 25px;
   text-align: left;
   width: 270px;
-  border-radius: 15px 0 15px;
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
@@ -163,7 +162,6 @@ nav h1 a {
   max-width: 100%;
   min-height: 248px;
   min-width: 100%;
-  border-top-left-radius: 15px;
 }
 #restaurants-list li h2 {
   color: #f18200;
@@ -190,7 +188,6 @@ nav h1 a {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  border-bottom-right-radius: 15px;
 }
 
 /* ====================== Restaurant Details ====================== */
@@ -547,8 +544,6 @@ nav h1 a {
     width: 100%;
     padding: 0 0 20px;
     position: relative;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
   }
   #reviews-list li p:nth-child(1) {
     background-color: #333;
@@ -556,7 +551,6 @@ nav h1 a {
     padding: 10px 20px;
     font-weight: 700;
     font-size: 16px;
-    border-top-left-radius: 15px;
   }
   #reviews-list li p:nth-child(2) {
     color: #ddd;
@@ -570,12 +564,11 @@ nav h1 a {
   #reviews-list li p:nth-child(3) {
     background-color: orange;
     padding: 5px 8px;
-    color: #ddd;
+    color: #fff;
     font-weight: 700;
     margin-left: 30px;
     display: inline-block;
     text-transform: uppercase;
-    border-radius: 5px;
   }
   #reviews-list li p:nth-child(4) {
     padding: 0 20px;
@@ -630,8 +623,6 @@ nav h1 a {
     width: 100%;
     padding: 0 0 20px;
     position: relative;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
   }
   #reviews-list li p:nth-child(1) {
     background-color: #333;
@@ -639,7 +630,6 @@ nav h1 a {
     padding: 10px 20px;
     font-weight: 700;
     font-size: 16px;
-    border-top-left-radius: 15px;
   }
   #reviews-list li p:nth-child(2) {
     color: #ddd;
@@ -653,12 +643,11 @@ nav h1 a {
   #reviews-list li p:nth-child(3) {
     background-color: orange;
     padding: 5px 8px;
-    color: #ddd;
+    color: #fff;
     font-weight: 700;
     margin-left: 30px;
     display: inline-block;
     text-transform: uppercase;
-    border-radius: 5px;
   }
   #reviews-list li p:nth-child(4) {
     padding: 0 20px;

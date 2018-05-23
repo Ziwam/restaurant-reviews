@@ -82,7 +82,7 @@ window.initMap = () => {
     scrollwheel: false
   });
   google.maps.event.addListener(self.map, "tilesloaded", function(){
-          [].slice.apply(document.querySelectorAll('#map a, #map button, #map div',)).forEach(function(item) { 
+      [].slice.apply(document.querySelectorAll('#map a, #map button, #map div',)).forEach(function(item) { 
      item.setAttribute('tabindex','999'); 
     });
   });
